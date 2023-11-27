@@ -38,36 +38,17 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot User Name? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOI-fF-7Pb">
-                                <rect key="frame" x="45" y="511.99999999999994" width="113" height="14.333333333333314"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                <color key="textColor" systemColor="systemBlueColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hto-Xb-Hvi">
-                                <rect key="frame" x="243.66666666666666" y="511.99999999999994" width="104.33333333333334" height="14.333333333333314"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                <color key="textColor" systemColor="systemBlueColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Sv8-iv-hu7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5eu-X1-DKh"/>
-                            <constraint firstItem="XOI-fF-7Pb" firstAttribute="top" secondItem="Sv8-iv-hu7" secondAttribute="bottom" constant="19.670000000000002" id="Agc-MC-D9j"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sv8-iv-hu7" secondAttribute="trailing" constant="45" id="KLw-R5-0OK"/>
-                            <constraint firstItem="Hto-Xb-Hvi" firstAttribute="leading" relation="lessThanOrEqual" secondItem="XOI-fF-7Pb" secondAttribute="trailing" multiplier="1.6" id="Qij-VM-jYw"/>
                             <constraint firstItem="Sv8-iv-hu7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="SwV-4a-mfD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hto-Xb-Hvi" secondAttribute="trailing" constant="45" id="fGy-NY-UFC"/>
-                            <constraint firstItem="XOI-fF-7Pb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="mUh-pk-jpt"/>
-                            <constraint firstItem="Hto-Xb-Hvi" firstAttribute="top" secondItem="Sv8-iv-hu7" secondAttribute="bottom" constant="19.670000000000002" id="qCQ-2z-pc3"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="button" destination="L1H-UD-SUs" id="PVn-33-lpG"/>
-                        <outlet property="forgotNameLabel" destination="XOI-fF-7Pb" id="Sbr-xd-e7I"/>
-                        <outlet property="forgotPasswordLabel" destination="Hto-Xb-Hvi" id="2H5-RH-FPc"/>
                         <outlet property="passwordTextField" destination="Zjn-IW-PdC" id="mNE-YO-vLs"/>
                         <outlet property="userNameTextField" destination="rjT-oQ-WD4" id="2xq-zX-3pA"/>
                     </connections>
@@ -80,9 +61,6 @@
     <resources>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -14,8 +14,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet var button: UIButton!
     
-    @IBOutlet var forgotNameLabel: UILabel!
-    @IBOutlet var forgotPasswordLabel: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
