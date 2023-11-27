@@ -12,14 +12,18 @@ class LoginViewController: UIViewController {
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
 
-    @IBOutlet var button: UIButton!
+    @IBOutlet var logInButton: UIButton!
     
 
+    @IBOutlet var forgotUserNameB: UIButton!
+    @IBOutlet var forgotPasswordB: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
+  
+    
 
 
 }

@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="eSr-oy-cKb">
-                                <rect key="frame" x="45" y="324.66666666666669" width="303" height="173.33333333333331"/>
+                                <rect key="frame" x="45" y="302" width="303" height="173.33333333333337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Sv8-iv-hu7">
                                         <rect key="frame" x="0.0" y="0.0" width="303" height="132.33333333333334"/>
@@ -66,11 +66,13 @@
                         <constraints>
                             <constraint firstItem="eSr-oy-cKb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="Hmw-dh-yC4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eSr-oy-cKb" secondAttribute="trailing" constant="45" id="ajV-Th-PCQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eSr-oy-cKb" secondAttribute="bottom" constant="320" id="fru-dm-WP7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="centerY" secondItem="eSr-oy-cKb" secondAttribute="centerY" constant="50" id="fru-dm-WP7"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="button" destination="L1H-UD-SUs" id="PVn-33-lpG"/>
+                        <outlet property="forgotPasswordB" destination="fC5-oS-7bp" id="nGp-sf-1P6"/>
+                        <outlet property="forgotUserNameB" destination="lbz-Gl-1Oe" id="sAm-t5-FVR"/>
+                        <outlet property="logInButton" destination="L1H-UD-SUs" id="PVn-33-lpG"/>
                         <outlet property="passwordTextField" destination="Zjn-IW-PdC" id="mNE-YO-vLs"/>
                         <outlet property="userNameTextField" destination="rjT-oQ-WD4" id="2xq-zX-3pA"/>
                     </connections>
