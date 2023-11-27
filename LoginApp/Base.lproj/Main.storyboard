@@ -64,6 +64,13 @@
                             <constraint firstItem="Hto-Xb-Hvi" firstAttribute="top" secondItem="Sv8-iv-hu7" secondAttribute="bottom" constant="19.670000000000002" id="qCQ-2z-pc3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="L1H-UD-SUs" id="PVn-33-lpG"/>
+                        <outlet property="forgotNameLabel" destination="XOI-fF-7Pb" id="Sbr-xd-e7I"/>
+                        <outlet property="forgotPasswordLabel" destination="Hto-Xb-Hvi" id="2H5-RH-FPc"/>
+                        <outlet property="passwordTextField" destination="Zjn-IW-PdC" id="mNE-YO-vLs"/>
+                        <outlet property="userNameTextField" destination="rjT-oQ-WD4" id="2xq-zX-3pA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
