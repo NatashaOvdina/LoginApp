@@ -97,18 +97,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="Luc-lJ-a1S">
-                                <rect key="frame" x="94.000000000000014" y="372" width="205.33333333333337" height="108"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="Luc-lJ-a1S">
+                                <rect key="frame" x="70" y="179.66666666666666" width="253" height="132.99999999999997"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, name! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sp-zK-BrG">
-                                        <rect key="frame" x="0.0" y="0.0" width="205.33333333333334" height="33.666666666666664"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, name! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="9sp-zK-BrG">
+                                        <rect key="frame" x="19" y="0.0" width="215" height="33.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucf-qn-EUi">
-                                        <rect key="frame" x="76.666666666666657" y="81.666666666666686" width="52" height="26.333333333333329"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋🏽" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucf-qn-EUi">
+                                        <rect key="frame" x="104.66666666666666" y="81.666666666666657" width="44" height="51.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="44"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -118,8 +118,9 @@
                         <viewLayoutGuide key="safeArea" id="DN4-nz-VKt"/>
                         <color key="backgroundColor" systemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Luc-lJ-a1S" firstAttribute="centerY" secondItem="I8Z-Nc-61C" secondAttribute="centerY" id="ClT-LD-Te3"/>
-                            <constraint firstItem="Luc-lJ-a1S" firstAttribute="centerX" secondItem="I8Z-Nc-61C" secondAttribute="centerX" id="uZ9-Q6-gow"/>
+                            <constraint firstItem="DN4-nz-VKt" firstAttribute="trailing" secondItem="Luc-lJ-a1S" secondAttribute="trailing" constant="70" id="0c4-9l-KrH"/>
+                            <constraint firstItem="DN4-nz-VKt" firstAttribute="centerY" secondItem="Luc-lJ-a1S" secondAttribute="centerY" constant="180" id="CD1-Eh-14p"/>
+                            <constraint firstItem="Luc-lJ-a1S" firstAttribute="leading" secondItem="DN4-nz-VKt" secondAttribute="leading" constant="70" id="k4l-i6-QFU"/>
                         </constraints>
                     </view>
                     <connections>
