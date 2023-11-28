@@ -101,8 +101,8 @@
                                 <rect key="frame" x="70" y="179.66666666666666" width="253" height="132.99999999999997"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, name! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="9sp-zK-BrG">
-                                        <rect key="frame" x="19" y="0.0" width="215" height="33.666666666666664"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                        <rect key="frame" x="21" y="0.0" width="211" height="33.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -121,6 +121,9 @@
                                 <state key="normal" title="Log Out">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="didButtonTapped" destination="eo4-x2-0By" eventType="touchUpInside" id="wCx-2L-6IJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DN4-nz-VKt"/>
