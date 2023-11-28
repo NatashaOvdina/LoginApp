@@ -12,9 +12,6 @@ final class LoginViewController: UIViewController {
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    @IBOutlet var forgotUserNameB: UIButton!
-    @IBOutlet var forgotPasswordB: UIButton!
-    
     private let user = "Alexey"
     private let password = "123"
     
@@ -69,7 +66,10 @@ final class LoginViewController: UIViewController {
         showAlert(withTitle: "Oops!", andMessage: "Your password is \(password) 😉")
     }
     
-    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        userNameTextField.text = ""
+        passwordTextField.text = ""
+    }
 }
 
 

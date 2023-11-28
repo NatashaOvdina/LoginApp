@@ -27,8 +27,4 @@ final class WelcomeViewController: UIViewController {
         view.layer.insertSublayer(gradientLayer, at: 0)
     }
     
-    @IBAction func didButtonTapped() {
-        dismiss(animated: true)
-    }
-    
 }

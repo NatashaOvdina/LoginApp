@@ -79,8 +79,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="forgotPasswordB" destination="fC5-oS-7bp" id="nGp-sf-1P6"/>
-                        <outlet property="forgotUserNameB" destination="lbz-Gl-1Oe" id="sAm-t5-FVR"/>
                         <outlet property="passwordTextField" destination="Zjn-IW-PdC" id="mNE-YO-vLs"/>
                         <outlet property="userNameTextField" destination="rjT-oQ-WD4" id="2xq-zX-3pA"/>
                     </connections>
@@ -122,7 +120,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="didButtonTapped" destination="eo4-x2-0By" eventType="touchUpInside" id="wCx-2L-6IJ"/>
+                                    <segue destination="A9b-8f-pgr" kind="unwind" unwindAction="unwindFor:" id="NXY-gd-Blc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -142,6 +140,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c3X-s9-NC6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="A9b-8f-pgr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1006.8702290076335" y="-27.464788732394368"/>
         </scene>
@@ -151,7 +150,7 @@
             <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
