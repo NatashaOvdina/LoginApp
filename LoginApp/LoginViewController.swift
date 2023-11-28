@@ -38,7 +38,14 @@ final class LoginViewController: UIViewController {
         return true
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToNext" {
+            let destinationVC = segue.destination as? WelcomeViewController
+            if let name = userNameTextField.text {
+                destinationVC?.name = name
+            }
+        }
+    }
     private func showAlert(withTitle title: String, andMessage message: String) {
         let alert = UIAlertController(
             title: title,
@@ -61,7 +68,8 @@ final class LoginViewController: UIViewController {
     @IBAction private func forgotPasswordAction() {
         showAlert(withTitle: "Oops!", andMessage: "Your password is \(password) 😉")
     }
- 
+    
+    
 }
 
 

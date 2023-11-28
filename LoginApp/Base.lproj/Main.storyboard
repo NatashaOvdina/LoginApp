@@ -39,7 +39,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Log In"/>
                                                 <connections>
-                                                    <segue destination="eo4-x2-0By" kind="presentation" modalPresentationStyle="fullScreen" id="i7W-DI-WUr"/>
+                                                    <segue destination="eo4-x2-0By" kind="presentation" identifier="goToNext" modalPresentationStyle="fullScreen" id="i7W-DI-WUr"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -96,20 +96,46 @@
                     <view key="view" contentMode="scaleToFill" id="I8Z-Nc-61C">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="Luc-lJ-a1S">
+                                <rect key="frame" x="94.000000000000014" y="372" width="205.33333333333337" height="108"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, name! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sp-zK-BrG">
+                                        <rect key="frame" x="0.0" y="0.0" width="205.33333333333334" height="33.666666666666664"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucf-qn-EUi">
+                                        <rect key="frame" x="76.666666666666657" y="81.666666666666686" width="52" height="26.333333333333329"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="DN4-nz-VKt"/>
-                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="backgroundColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Luc-lJ-a1S" firstAttribute="centerY" secondItem="I8Z-Nc-61C" secondAttribute="centerY" id="ClT-LD-Te3"/>
+                            <constraint firstItem="Luc-lJ-a1S" firstAttribute="centerX" secondItem="I8Z-Nc-61C" secondAttribute="centerX" id="uZ9-Q6-gow"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="9sp-zK-BrG" id="xbH-Ws-Qfu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c3X-s9-NC6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1008" y="-27"/>
+            <point key="canvasLocation" x="1006.8702290076335" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGray6Color">
+        <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
