@@ -12,8 +12,6 @@ class LoginViewController: UIViewController {
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    @IBOutlet var logInButton: UIButton!
-    
     
     @IBOutlet var forgotUserNameB: UIButton!
     @IBOutlet var forgotPasswordB: UIButton!
@@ -31,7 +29,27 @@ class LoginViewController: UIViewController {
         view.endEditing(true)
     }
     
-   
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        guard userNameTextField.text == user, passwordTextField.text == password else {
+            showAlert(
+                withTitle: "Invalid login or password",
+                andMessage: "Please, enter correct login and password"
+            )
+            return false
+        }
+        return true
+    }
+    
+    
+    private func showAlert(withTitle: String, andMessage message: String) {
+        let alert = UIAlertController(title: withTitle, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            self.userNameTextField.text = ""
+            self.passwordTextField.text = ""
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
 }
 
 

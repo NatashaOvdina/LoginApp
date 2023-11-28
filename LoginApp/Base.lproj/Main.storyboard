@@ -38,6 +38,9 @@
                                                 <rect key="frame" x="0.0" y="98" width="303" height="34.333333333333343"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Log In"/>
+                                                <connections>
+                                                    <segue destination="eo4-x2-0By" kind="presentation" modalPresentationStyle="fullScreen" id="i7W-DI-WUr"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -72,10 +75,8 @@
                     <connections>
                         <outlet property="forgotPasswordB" destination="fC5-oS-7bp" id="nGp-sf-1P6"/>
                         <outlet property="forgotUserNameB" destination="lbz-Gl-1Oe" id="sAm-t5-FVR"/>
-                        <outlet property="logInButton" destination="L1H-UD-SUs" id="PVn-33-lpG"/>
                         <outlet property="passwordTextField" destination="Zjn-IW-PdC" id="mNE-YO-vLs"/>
                         <outlet property="userNameTextField" destination="rjT-oQ-WD4" id="2xq-zX-3pA"/>
-                        <segue destination="eo4-x2-0By" kind="presentation" modalPresentationStyle="fullScreen" id="hrb-2Q-0lv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
