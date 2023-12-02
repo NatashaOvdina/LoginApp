@@ -3,6 +3,7 @@
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -150,7 +151,7 @@
             </objects>
             <point key="canvasLocation" x="1006.5420560747663" y="729.58963282937373"/>
         </scene>
-        <!--Profile-->
+        <!--Natasha Ovd-->
         <scene sceneID="8v4-1N-Qap">
             <objects>
                 <viewController id="kwt-Hm-pjf" customClass="ProfileViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -158,21 +159,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Natasha Ovdina" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7A-zB-fC6">
-                                <rect key="frame" x="30" y="66.5" width="260" height="27.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
-                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myPhoto (2)" translatesAutoresizingMaskIntoConstraints="NO" id="LrN-6M-WcB">
-                                <rect key="frame" x="85" y="134" width="150" height="150"/>
+                                <rect key="frame" x="85" y="131" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="LrN-6M-WcB" secondAttribute="height" multiplier="1:1" id="l7f-2i-zJb"/>
                                     <constraint firstAttribute="width" constant="150" id="y7j-dN-9b9"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="aWT-mz-NYJ">
-                                <rect key="frame" x="30" y="337.5" width="260" height="162.5"/>
+                                <rect key="frame" x="30" y="335" width="260" height="162.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="rYf-sP-nd0">
                                         <rect key="frame" x="0.0" y="0.0" width="103" height="20.5"/>
@@ -265,18 +260,24 @@
                         <viewLayoutGuide key="safeArea" id="z3k-IX-b0b"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
+                            <constraint firstItem="LrN-6M-WcB" firstAttribute="top" secondItem="z3k-IX-b0b" secondAttribute="top" constant="40" id="9Qo-RS-oe0"/>
                             <constraint firstItem="aWT-mz-NYJ" firstAttribute="leading" secondItem="z3k-IX-b0b" secondAttribute="leading" constant="30" id="C3S-7X-REL"/>
                             <constraint firstItem="aWT-mz-NYJ" firstAttribute="centerX" secondItem="KAN-z6-vYQ" secondAttribute="centerX" id="D4V-bx-0sk"/>
-                            <constraint firstItem="z3k-IX-b0b" firstAttribute="trailing" secondItem="O7A-zB-fC6" secondAttribute="trailing" constant="30" id="LK7-PK-dFf"/>
                             <constraint firstItem="LrN-6M-WcB" firstAttribute="centerX" secondItem="KAN-z6-vYQ" secondAttribute="centerX" id="Spw-q6-4EZ"/>
                             <constraint firstItem="aWT-mz-NYJ" firstAttribute="centerY" secondItem="LrN-6M-WcB" secondAttribute="bottom" constant="135" id="U4n-7a-iU9"/>
-                            <constraint firstItem="O7A-zB-fC6" firstAttribute="centerY" secondItem="z3k-IX-b0b" secondAttribute="top" constant="80" id="ZiX-uR-gZP"/>
                             <constraint firstItem="z3k-IX-b0b" firstAttribute="trailing" secondItem="aWT-mz-NYJ" secondAttribute="trailing" constant="30" id="ZnD-bQ-A9e"/>
-                            <constraint firstItem="LrN-6M-WcB" firstAttribute="top" secondItem="O7A-zB-fC6" secondAttribute="bottom" constant="40" id="xLE-Tr-Pmo"/>
-                            <constraint firstItem="O7A-zB-fC6" firstAttribute="leading" secondItem="z3k-IX-b0b" secondAttribute="leading" constant="30" id="xTw-vN-1EP"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="0TU-N0-xFL"/>
+                    <navigationItem key="navigationItem" title="Natasha Ovd" id="c8a-rQ-951">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="a2O-4o-p3S"/>
+                        <barButtonItem key="rightBarButtonItem" title="Bio" id="1o1-hL-NL6">
+                            <imageReference key="image" image="person.text.rectangle.fill" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" systemColor="linkColor"/>
+                            <connections>
+                                <segue destination="lhy-yO-O09" kind="show" id="fCP-q3-Eo6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="dateBirthLabel" destination="Apq-c5-d7M" id="raL-j4-Egv"/>
                         <outlet property="educationLabel" destination="cXm-va-hCa" id="tng-Tt-TFS"/>
@@ -284,12 +285,45 @@
                         <outlet property="nameLabel" destination="eVl-DO-DAi" id="VoK-or-JeV"/>
                         <outlet property="quoteLabel" destination="PVf-KT-OOf" id="RcB-rp-zRp"/>
                         <outlet property="surnameLabel" destination="M0u-Qf-aNb" id="EpU-LC-Qhm"/>
-                        <outlet property="titleLabel" destination="O7A-zB-fC6" id="HlN-nk-eER"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F53-4J-ylF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1860" y="728.87323943661977"/>
+            <point key="canvasLocation" x="2857.5" y="728.87323943661977"/>
+        </scene>
+        <!--Natasha Ovd-->
+        <scene sceneID="Vdu-xX-Np7">
+            <objects>
+                <viewController id="lhy-yO-O09" customClass="BioViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fRn-J3-xoE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some info " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBd-Oy-buL">
+                                <rect key="frame" x="16" y="109" width="288" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SI2-Sb-0g7"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <constraints>
+                            <constraint firstItem="SI2-Sb-0g7" firstAttribute="trailing" secondItem="UBd-Oy-buL" secondAttribute="trailing" constant="16" id="Blc-SM-olX"/>
+                            <constraint firstItem="UBd-Oy-buL" firstAttribute="top" secondItem="SI2-Sb-0g7" secondAttribute="top" constant="18" id="S8s-za-YOT"/>
+                            <constraint firstItem="UBd-Oy-buL" firstAttribute="leading" secondItem="SI2-Sb-0g7" secondAttribute="leading" constant="16" id="itF-Mh-lh6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Natasha Ovd" id="DCz-Vm-89k">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="YPP-GF-6hB"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bioLabel" destination="UBd-Oy-buL" id="9kA-wX-8P1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bTZ-d1-bfW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3624.6376811594205" y="728.57142857142856"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="XNR-yz-YM7">
@@ -297,21 +331,52 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qNR-u7-eqc" customClass="TabBarViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6YY-gZ-N9T">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </tabBar>
                     <connections>
                         <segue destination="eo4-x2-0By" kind="relationship" relationship="viewControllers" id="YOh-c3-okb"/>
-                        <segue destination="kwt-Hm-pjf" kind="relationship" relationship="viewControllers" id="u9B-Ih-sei"/>
+                        <segue destination="cAb-6F-SQQ" kind="relationship" relationship="viewControllers" id="u9B-Ih-sei"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DAJ-jG-yGF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1006.8702290076335" y="-27.464788732394368"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="6eu-94-UGS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cAb-6F-SQQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="0TU-N0-xFL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="bAr-Xv-2Hd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                            <color key="textColor" red="0.50651732159999996" green="0.15945756920000001" blue="0.54363952019999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kwt-Hm-pjf" kind="relationship" relationship="rootViewController" id="3bh-gF-nli"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mkJ-hQ-uq8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860" y="728.87323943661977"/>
+        </scene>
     </scenes>
     <resources>
         <image name="myPhoto (2)" width="1012" height="1012"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="person.text.rectangle.fill" catalog="system" width="128" height="93"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="scrollViewTexturedBackgroundColor">
             <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -320,6 +385,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

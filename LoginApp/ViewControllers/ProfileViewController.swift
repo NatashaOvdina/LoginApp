@@ -11,7 +11,6 @@ class ProfileViewController: UIViewController {
 
     @IBOutlet var image: UIImageView!
     
-    @IBOutlet var titleLabel: UILabel!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var surnameLabel: UILabel!
     @IBOutlet var dateBirthLabel: UILabel!
@@ -24,9 +23,8 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         makeGradientBackground()
         image.layer.cornerRadius = image.frame.width / 2
-        
-        titleLabel.text = user.person.fullName
-        
+        title = user.person.fullName
+
         nameLabel.text = user.person.name
         surnameLabel.text = user.person.surname
         dateBirthLabel.text = user.person.dateOfBirth

@@ -21,6 +21,13 @@ final class LoginViewController: UIViewController {
         view.endEditing(true)
     }
     
+    // MARK: - View Life Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        userNameTextField.text = user.userName
+        passwordTextField.text = user.password
+    }
+    
     // MARK: - Override Segue Methods
     override func shouldPerformSegue(
         withIdentifier identifier: String,
@@ -42,6 +49,7 @@ final class LoginViewController: UIViewController {
         destinationVC.name = user.userName
         
     }
+    
     
     // MARK: - IB Actions Alert
     @IBAction func forgotUserNameAction() {
