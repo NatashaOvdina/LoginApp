@@ -13,8 +13,7 @@ final class LoginViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     
     // MARK: - Private Properties
-    private let user = "Alexey"
-    private let password = "123"
+    private let user = User.getUser()
     
     // MARK: - Override Keyboard Method
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -27,7 +26,7 @@ final class LoginViewController: UIViewController {
         withIdentifier identifier: String,
         sender: Any?
     ) -> Bool {
-        guard userNameTextField.text == user, passwordTextField.text == password else {
+        guard userNameTextField.text == user.userName, passwordTextField.text == user.password else {
             showAlert(
                 withTitle: "Invalid login or password",
                 andMessage: "Please, enter correct login and password") {
@@ -40,16 +39,17 @@ final class LoginViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destinationVC = segue.destination as? WelcomeViewController else { return }
-          destinationVC.name = user
+        destinationVC.name = user.userName
+        
     }
     
     // MARK: - IB Actions Alert
     @IBAction func forgotUserNameAction() {
-        showAlert(withTitle: "Oops!", andMessage: "Your name is \(user) 😉")
+        showAlert(withTitle: "Oops!", andMessage: "Your name is \(user.userName) 😉")
     }
     
     @IBAction func forgotPasswordAction() {
-        showAlert(withTitle: "Oops!", andMessage: "Your password is \(password) 😉")
+        showAlert(withTitle: "Oops!", andMessage: "Your password is \(user.password) 😉")
     }
     
     // MARK: - IB Action for Empty TF

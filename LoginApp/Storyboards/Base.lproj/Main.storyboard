@@ -161,10 +161,10 @@
             </objects>
             <point key="canvasLocation" x="1860" y="730"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="XNR-yz-YM7">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qNR-u7-eqc" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qNR-u7-eqc" customClass="TabBarViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6YY-gZ-N9T">
                         <autoresizingMask key="autoresizingMask"/>
