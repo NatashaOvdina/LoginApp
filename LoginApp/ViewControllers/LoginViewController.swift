@@ -8,6 +8,7 @@
 import UIKit
 
 final class LoginViewController: UIViewController {
+    
     // MARK: - IB Outlets
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -15,17 +16,17 @@ final class LoginViewController: UIViewController {
     // MARK: - Private Properties
     private let user = User.getUser()
     
-    // MARK: - Override Keyboard Method
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super .touchesBegan(touches, with: event)
-        view.endEditing(true)
-    }
-    
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         userNameTextField.text = user.userName
         passwordTextField.text = user.password
+    }
+    
+    // MARK: - Override Keyboard Method
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super .touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
     
     // MARK: - Override Segue Methods
@@ -49,8 +50,7 @@ final class LoginViewController: UIViewController {
         destinationVC.name = user.userName
         
     }
-    
-    
+
     // MARK: - IB Actions Alert
     @IBAction func forgotUserNameAction() {
         showAlert(withTitle: "Oops!", andMessage: "Your name is \(user.userName) 😉")
@@ -67,7 +67,11 @@ final class LoginViewController: UIViewController {
     }
     
     // MARK: - Private Method Alert
-    private func showAlert(withTitle title: String, andMessage message: String, completion: (() -> Void)? = nil) {
+    private func showAlert(
+        withTitle title: String,
+        andMessage message: String,
+        completion: (() -> Void)? = nil
+    ) {
         let alert = UIAlertController(
             title: title,
             message: message,

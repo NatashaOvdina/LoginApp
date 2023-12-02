@@ -9,7 +9,7 @@ import UIKit
 
 final class WelcomeViewController: UIViewController {
     
-    // MARK: - IB Outlet 
+    // MARK: - IB Outlets Label
     @IBOutlet var welcomeLabel: UILabel!
     @IBOutlet var fullNameLabel: UILabel!
     

@@ -7,18 +7,22 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
-
+final class ProfileViewController: UIViewController {
+    
+    // MARK: - IB Outlet Image
     @IBOutlet var image: UIImageView!
     
+    // MARK: - IB Outlets Label
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var surnameLabel: UILabel!
     @IBOutlet var dateBirthLabel: UILabel!
     @IBOutlet var educationLabel: UILabel!
     @IBOutlet var quoteLabel: UILabel!
     
-   private let user = User.getUser()
+    // MARK: - Public Property
+    private let user = User.getUser()
     
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         makeGradientBackground()

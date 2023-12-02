@@ -7,10 +7,15 @@
 
 import UIKit
 
-class BioViewController: UIViewController {
+final class BioViewController: UIViewController {
+    
+    // MARK: - Public Property
     private let user = User.getUser()
+    
+    // MARK: - Private Property
     @IBOutlet var bioLabel: UILabel!
     
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         makeGradientBackground()
