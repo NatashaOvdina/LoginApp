@@ -164,58 +164,71 @@
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aWT-mz-NYJ">
-                                <rect key="frame" x="16" y="280" width="100.5" height="142.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myPhoto (2)" translatesAutoresizingMaskIntoConstraints="NO" id="LrN-6M-WcB">
+                                <rect key="frame" x="85" y="134" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LrN-6M-WcB" secondAttribute="height" multiplier="1:1" id="l7f-2i-zJb"/>
+                                    <constraint firstAttribute="width" constant="150" id="y7j-dN-9b9"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="aWT-mz-NYJ">
+                                <rect key="frame" x="30" y="337.5" width="260" height="162.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Wf-d5-Xh6">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Wf-d5-Xh6">
                                         <rect key="frame" x="0.0" y="0.0" width="54" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surname: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9O0-He-it9">
-                                        <rect key="frame" x="0.0" y="30.5" width="77.5" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surname: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9O0-He-it9">
+                                        <rect key="frame" x="0.0" y="35.5" width="77.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSh-3F-scf">
-                                        <rect key="frame" x="0.0" y="61" width="100.5" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSh-3F-scf">
+                                        <rect key="frame" x="0.0" y="71" width="100.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Education: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgS-m9-l0y">
-                                        <rect key="frame" x="0.0" y="91.5" width="85" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Education: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgS-m9-l0y">
+                                        <rect key="frame" x="0.0" y="106.5" width="85" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DT7-tz-ddP">
-                                        <rect key="frame" x="0.0" y="122" width="56" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote: " lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DT7-tz-ddP">
+                                        <rect key="frame" x="0.0" y="142" width="56" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="myPhoto 1" translatesAutoresizingMaskIntoConstraints="NO" id="ygM-XQ-xuE">
-                                <rect key="frame" x="74" y="102" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="thin"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z3k-IX-b0b"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
+                            <constraint firstItem="aWT-mz-NYJ" firstAttribute="leading" secondItem="z3k-IX-b0b" secondAttribute="leading" constant="30" id="C3S-7X-REL"/>
+                            <constraint firstItem="aWT-mz-NYJ" firstAttribute="centerX" secondItem="KAN-z6-vYQ" secondAttribute="centerX" id="D4V-bx-0sk"/>
                             <constraint firstItem="z3k-IX-b0b" firstAttribute="trailing" secondItem="O7A-zB-fC6" secondAttribute="trailing" constant="30" id="LK7-PK-dFf"/>
+                            <constraint firstItem="LrN-6M-WcB" firstAttribute="centerX" secondItem="KAN-z6-vYQ" secondAttribute="centerX" id="Spw-q6-4EZ"/>
+                            <constraint firstItem="aWT-mz-NYJ" firstAttribute="centerY" secondItem="LrN-6M-WcB" secondAttribute="bottom" constant="135" id="U4n-7a-iU9"/>
                             <constraint firstItem="O7A-zB-fC6" firstAttribute="centerY" secondItem="z3k-IX-b0b" secondAttribute="top" constant="80" id="ZiX-uR-gZP"/>
+                            <constraint firstItem="z3k-IX-b0b" firstAttribute="trailing" secondItem="aWT-mz-NYJ" secondAttribute="trailing" constant="30" id="ZnD-bQ-A9e"/>
+                            <constraint firstItem="LrN-6M-WcB" firstAttribute="top" secondItem="O7A-zB-fC6" secondAttribute="bottom" constant="40" id="xLE-Tr-Pmo"/>
                             <constraint firstItem="O7A-zB-fC6" firstAttribute="leading" secondItem="z3k-IX-b0b" secondAttribute="leading" constant="30" id="xTw-vN-1EP"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="0TU-N0-xFL"/>
                     <connections>
-                        <outlet property="image" destination="ygM-XQ-xuE" id="HLO-4g-zVV"/>
+                        <outlet property="dateBirthLabel" destination="TSh-3F-scf" id="ck3-RV-K2w"/>
+                        <outlet property="educationLabel" destination="YgS-m9-l0y" id="OXi-vK-f9v"/>
+                        <outlet property="image" destination="LrN-6M-WcB" id="7LQ-Xv-rhA"/>
+                        <outlet property="nameLabel" destination="4Wf-d5-Xh6" id="jLb-lQ-DMX"/>
+                        <outlet property="quoteLabel" destination="DT7-tz-ddP" id="bVm-c9-lGS"/>
+                        <outlet property="surnameLabel" destination="9O0-He-it9" id="Sci-26-Wuq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F53-4J-ylF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -241,7 +254,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="myPhoto 1" width="1012" height="1012"/>
+        <image name="myPhoto (2)" width="1012" height="1012"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="scrollViewTexturedBackgroundColor">
             <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
