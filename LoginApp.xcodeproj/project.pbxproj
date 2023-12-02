@@ -10,6 +10,7 @@
 		423844442B1B5D3500DF27AB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423844432B1B5D3500DF27AB /* User.swift */; };
 		423844472B1B6ABB00DF27AB /* Extension + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423844462B1B6ABB00DF27AB /* Extension + UIViewController.swift */; };
 		423844492B1B7AB700DF27AB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423844482B1B7AB700DF27AB /* TabBarViewController.swift */; };
+		4238444B2B1B9A4B00DF27AB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4238444A2B1B9A4B00DF27AB /* ProfileViewController.swift */; };
 		42B54BD62B14FF580081D50E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B54BD52B14FF580081D50E /* AppDelegate.swift */; };
 		42B54BD82B14FF580081D50E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B54BD72B14FF580081D50E /* SceneDelegate.swift */; };
 		42B54BDA2B14FF580081D50E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B54BD92B14FF580081D50E /* LoginViewController.swift */; };
@@ -23,6 +24,7 @@
 		423844432B1B5D3500DF27AB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		423844462B1B6ABB00DF27AB /* Extension + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIViewController.swift"; sourceTree = "<group>"; };
 		423844482B1B7AB700DF27AB /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		4238444A2B1B9A4B00DF27AB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		42B54BD22B14FF580081D50E /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B54BD52B14FF580081D50E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42B54BD72B14FF580081D50E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				42B54BD92B14FF580081D50E /* LoginViewController.swift */,
 				42B54BE92B15F0FE0081D50E /* WelcomeViewController.swift */,
+				4238444A2B1B9A4B00DF27AB /* ProfileViewController.swift */,
 				423844482B1B7AB700DF27AB /* TabBarViewController.swift */,
 			);
 			path = ViewControllers;
@@ -196,6 +199,7 @@
 				42B54BEA2B15F0FE0081D50E /* WelcomeViewController.swift in Sources */,
 				423844492B1B7AB700DF27AB /* TabBarViewController.swift in Sources */,
 				42B54BD62B14FF580081D50E /* AppDelegate.swift in Sources */,
+				4238444B2B1B9A4B00DF27AB /* ProfileViewController.swift in Sources */,
 				42B54BD82B14FF580081D50E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
