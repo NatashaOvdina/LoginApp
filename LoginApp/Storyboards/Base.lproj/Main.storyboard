@@ -39,7 +39,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Log In"/>
                                                 <connections>
-                                                    <segue destination="eo4-x2-0By" kind="presentation" identifier="goToNext" modalPresentationStyle="fullScreen" id="i7W-DI-WUr"/>
+                                                    <segue destination="qNR-u7-eqc" kind="presentation" identifier="goToNext" modalPresentationStyle="fullScreen" id="i7W-DI-WUr"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -87,7 +87,7 @@
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
-        <!--Welcome View Controller-->
+        <!--Home-->
         <scene sceneID="Gku-YK-yAe">
             <objects>
                 <viewController id="eo4-x2-0By" customClass="WelcomeViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -96,7 +96,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="Luc-lJ-a1S">
-                                <rect key="frame" x="70" y="179.66666666666666" width="253" height="132.99999999999997"/>
+                                <rect key="frame" x="70" y="155" width="253" height="133"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, name! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="9sp-zK-BrG">
                                         <rect key="frame" x="21" y="0.0" width="211" height="33.666666666666664"/>
@@ -113,7 +113,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waI-d1-9Ys">
-                                <rect key="frame" x="142" y="567.66666666666663" width="109" height="39"/>
+                                <rect key="frame" x="142" y="543.33333333333337" width="109" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Log Out">
@@ -135,6 +135,7 @@
                             <constraint firstItem="waI-d1-9Ys" firstAttribute="top" secondItem="Luc-lJ-a1S" secondAttribute="bottom" constant="255.33000000000001" id="xo9-Sy-zDw"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="person" catalog="system" id="1qS-t8-zCg"/>
                     <connections>
                         <outlet property="welcomeLabel" destination="9sp-zK-BrG" id="xbH-Ws-Qfu"/>
                     </connections>
@@ -142,10 +143,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c3X-s9-NC6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="A9b-8f-pgr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
+            <point key="canvasLocation" x="1007" y="730"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="8v4-1N-Qap">
+            <objects>
+                <viewController id="kwt-Hm-pjf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KAN-z6-vYQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="z3k-IX-b0b"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="0TU-N0-xFL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F53-4J-ylF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860" y="730"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="XNR-yz-YM7">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qNR-u7-eqc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6YY-gZ-N9T">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="eo4-x2-0By" kind="relationship" relationship="viewControllers" id="YOh-c3-okb"/>
+                        <segue destination="kwt-Hm-pjf" kind="relationship" relationship="viewControllers" id="u9B-Ih-sei"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DAJ-jG-yGF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="1006.8702290076335" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="scrollViewTexturedBackgroundColor">
             <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
