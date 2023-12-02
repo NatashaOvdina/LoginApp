@@ -13,12 +13,12 @@ final class WelcomeViewController: UIViewController {
     @IBOutlet var welcomeLabel: UILabel!
     
     // MARK: - Public Property
-    var name = ""
+    var name: String!
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeLabel.text = "Welcome, \(name)!"
+        welcomeLabel.text = "Welcome, \(name ?? "")!"
         makeGradientBackground()
     }
     

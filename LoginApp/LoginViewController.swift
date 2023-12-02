@@ -30,20 +30,17 @@ final class LoginViewController: UIViewController {
         guard userNameTextField.text == user, passwordTextField.text == password else {
             showAlert(
                 withTitle: "Invalid login or password",
-                andMessage: "Please, enter correct login and password"
-            )
+                andMessage: "Please, enter correct login and password") {
+                    self.passwordTextField.text = ""
+                }
             return false
         }
         return true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToNext" {
-            let destinationVC = segue.destination as? WelcomeViewController
-            if let name = userNameTextField.text {
-                destinationVC?.name = name
-            }
-        }
+        guard let destinationVC = segue.destination as? WelcomeViewController else { return }
+          destinationVC.name = user
     }
     
     // MARK: - IB Actions Alert
@@ -62,15 +59,14 @@ final class LoginViewController: UIViewController {
     }
     
     // MARK: - Private Method Alert
-    private func showAlert(withTitle title: String, andMessage message: String) {
+    private func showAlert(withTitle title: String, andMessage message: String, completion: (() -> Void)? = nil) {
         let alert = UIAlertController(
             title: title,
             message: message,
             preferredStyle: .alert
         )
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-            self.userNameTextField.text = ""
-            self.passwordTextField.text = ""
+            completion?()
         }
         alert.addAction(okAction)
         present(alert, animated: true)
