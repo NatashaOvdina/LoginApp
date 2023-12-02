@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 42B54BCD2B14FF580081D50E /* Build configuration list for PBXProject "AboutMeApp" */;
+			buildConfigurationList = 42B54BCD2B14FF580081D50E /* Build configuration list for PBXProject "LoginApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -358,7 +358,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42B54BCD2B14FF580081D50E /* Build configuration list for PBXProject "AboutMeApp" */ = {
+		42B54BCD2B14FF580081D50E /* Build configuration list for PBXProject "LoginApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42B54BE42B14FF590081D50E /* Debug */,
