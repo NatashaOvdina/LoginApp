@@ -19,6 +19,7 @@
 		42B54BDF2B14FF590081D50E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B54BDE2B14FF590081D50E /* Assets.xcassets */; };
 		42B54BE22B14FF590081D50E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B54BE02B14FF590081D50E /* LaunchScreen.storyboard */; };
 		42B54BEA2B15F0FE0081D50E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B54BE92B15F0FE0081D50E /* WelcomeViewController.swift */; };
+		42DFC3892B1C5DC500B977F6 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DFC3882B1C5DC500B977F6 /* NavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		42B54BE12B14FF590081D50E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42B54BE32B14FF590081D50E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42B54BE92B15F0FE0081D50E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		42DFC3882B1C5DC500B977F6 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				4238444A2B1B9A4B00DF27AB /* ProfileViewController.swift */,
 				4238444C2B1BB5CF00DF27AB /* BioViewController.swift */,
 				423844482B1B7AB700DF27AB /* TabBarViewController.swift */,
+				42DFC3882B1C5DC500B977F6 /* NavigationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				42B54BD62B14FF580081D50E /* AppDelegate.swift in Sources */,
 				4238444B2B1B9A4B00DF27AB /* ProfileViewController.swift in Sources */,
 				42B54BD82B14FF580081D50E /* SceneDelegate.swift in Sources */,
+				42DFC3892B1C5DC500B977F6 /* NavigationViewController.swift in Sources */,
 				4238444D2B1BB5CF00DF27AB /* BioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

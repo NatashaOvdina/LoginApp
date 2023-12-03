@@ -10,7 +10,7 @@ import UIKit
 final class BioViewController: UIViewController {
     
     // MARK: - Public Property
-    private let user = User.getUser()
+    var user: User!
     
     // MARK: - Private Property
     @IBOutlet var bioLabel: UILabel!

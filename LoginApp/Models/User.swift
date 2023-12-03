@@ -21,7 +21,9 @@ struct Person {
     let dateOfBirth: String
     let education: String
     let quote: String
+    let image: String
     let biography: String
+   
     
     var fullName: String {
         name + " " + surname
@@ -34,6 +36,7 @@ struct Person {
             dateOfBirth: "05.07.1997",
             education: "LGU & MPGU",
             quote: "Fall down 7 times stand up 8",
+            image: "image",
             biography: """
             Hi! My name is Natasha Ovdina, I'm from a small town Ukhta, but currently
             I live in Saint-Petersburg. Because I'm a woman I don't like speaking

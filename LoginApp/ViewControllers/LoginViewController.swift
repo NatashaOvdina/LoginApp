@@ -13,8 +13,8 @@ final class LoginViewController: UIViewController {
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    // MARK: - Private Properties
-    private let user = User.getUser()
+    // MARK: - Public Properties
+    let user = User.getUser()
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
@@ -46,11 +46,19 @@ final class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destinationVC = segue.destination as? WelcomeViewController else { return }
-        destinationVC.name = user.userName
+        guard let tabBarVC = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarVC.viewControllers else { return }
         
+        for viewController in viewControllers {
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.user = user
+            } else if let navigationVC = viewController as? NavigationViewController {
+                if let profileVC = navigationVC.topViewController as? ProfileViewController {
+                    profileVC.user = user
+                }
+            }
+        }
     }
-
     // MARK: - IB Actions Alert
     @IBAction func forgotUserNameAction() {
         showAlert(withTitle: "Oops!", andMessage: "Your name is \(user.userName) 😉")

@@ -16,8 +16,7 @@ final class WelcomeViewController: UIViewController {
     // MARK: - Public Property
     var name: String!
     
-    // MARK: - Private Property
-    private let user = User.getUser()
+    var user: User!
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
