@@ -13,7 +13,7 @@ final class LoginViewController: UIViewController {
     @IBOutlet var userNameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    // MARK: - Public Properties
+    // MARK: - Model Property
     let user = User.getUser()
     
     // MARK: - View Life Cycle
@@ -52,7 +52,7 @@ final class LoginViewController: UIViewController {
         for viewController in viewControllers {
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.user = user
-            } else if let navigationVC = viewController as? NavigationViewController {
+            } else if let navigationVC = viewController as? UINavigationController {
                 if let profileVC = navigationVC.topViewController as? ProfileViewController {
                     profileVC.user = user
                 }

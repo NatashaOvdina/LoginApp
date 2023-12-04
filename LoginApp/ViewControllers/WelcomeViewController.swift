@@ -14,8 +14,6 @@ final class WelcomeViewController: UIViewController {
     @IBOutlet var fullNameLabel: UILabel!
     
     // MARK: - Public Property
-    var name: String!
-    
     var user: User!
     
     // MARK: - View Life Cycle
