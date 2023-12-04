@@ -46,19 +46,10 @@ final class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let tabBarVC = segue.destination as? UITabBarController else { return }
-        guard let viewControllers = tabBarVC.viewControllers else { return }
-        
-        for viewController in viewControllers {
-            if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.user = user
-            } else if let navigationVC = viewController as? UINavigationController {
-                if let profileVC = navigationVC.topViewController as? ProfileViewController {
-                    profileVC.user = user
-                }
-            }
-        }
+        guard let tabBarVC = segue.destination as? TabBarViewController else { return }
+        tabBarVC.user = user
     }
+    
     // MARK: - IB Actions Alert
     @IBAction func forgotUserNameAction() {
         showAlert(withTitle: "Oops!", andMessage: "Your name is \(user.userName) 😉")
